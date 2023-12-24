@@ -21,7 +21,7 @@ search_train_form.addEventListener('submit', async (e) => {
 
   console.log(formDataObject);
 
-  const res = await fetch(`http://localhost:3000/search/${formDataObject.from + " " + formDataObject.to}`);
+  const res = await fetch(`https://train-clone.vercel.app/search/${formDataObject.from + " " + formDataObject.to}`);
   const data = await res.json(); // Use await to get the JSON data
   mapTrainsData(data);
 

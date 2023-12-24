@@ -14,7 +14,7 @@
   
     console.log(formDataObject);
   
-    const res = await fetch(`http://localhost:3000/search/${formDataObject.Train_Number }`);
+    const res = await fetch(`https://train-clone.vercel.app/search/${formDataObject.Train_Number }`);
     const data = await res.json(); // Use await to get the JSON data
     mapTrainsData(data);
   
